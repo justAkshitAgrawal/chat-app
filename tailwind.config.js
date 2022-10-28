@@ -8,5 +8,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-hero-patterns")],
+  plugins: [
+    require("tailwindcss-hero-patterns"),
+    require("tailwind-scrollbar")({ nocompatible: true }),
+  ],
 };
