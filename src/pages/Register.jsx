@@ -126,6 +126,19 @@ function Register() {
           </Link>
         </h1>
       </div>
+      <div className="absolute bottom-5">
+        <h1 className="p-2 text-sm text-gray-400 rounded-md bg-black/30 ">
+          Made by{" "}
+          <a
+            href="https://akshitagrwal.dev"
+            target="_blank"
+            className="transition-all hover:underline"
+            rel="noreferrer"
+          >
+            Akshit Agrawal
+          </a>
+        </h1>
+      </div>
     </div>
   );
 }

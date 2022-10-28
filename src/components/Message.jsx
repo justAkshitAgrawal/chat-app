@@ -14,11 +14,11 @@ function Message({ message }) {
   return (
     <div
       ref={ref}
-      className={`flex items-start space-x-3 ${
-        message.senderId === currentUser.uid && " flex-row-reverse"
+      className={`flex items-start space-x-2 ${
+        message.senderId === currentUser.uid && " flex-row-reverse gap-2"
       }`}
     >
-      <div className="flex flex-col items-center space-y-2">
+      <div className="">
         <img
           src={
             message.senderId === currentUser.uid
@@ -28,10 +28,9 @@ function Message({ message }) {
           alt=""
           className="w-10 h-10 rounded-full "
         />
-        <span className="text-xs ">Just Now</span>
       </div>
-      <div className=" bg-[#2c303d] rounded-r-lg rounded-bl-lg mt-2 max-w-sm">
-        <h1 className="p-2">{message.text}</h1>
+      <div className=" bg-[#2c303d] rounded-lg max-w-sm mx-2">
+        <h1 className="px-3 py-2">{message.text}</h1>
         {message.img && <img src={message.img} alt="" />}
       </div>
     </div>

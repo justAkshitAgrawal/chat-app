@@ -21,7 +21,7 @@ function Login() {
     }
   };
   return (
-    <div className="flex items-center justify-center h-screen font-poppins heropattern-hexagons-slate-800 bg-[#272B36]">
+    <div className="flex items-center h-screen justify-center font-poppins heropattern-hexagons-slate-800 bg-[#272B36]">
       <div className="flex flex-col space-y-5 items-center justify-center bg-[#2F3340] py-6 px-10 shadow-xl rounded-xl">
         <img src={logo} alt="" className="w-10 h-10" />
         <h1 className="text-4xl font-semibold text-white ">DevChat</h1>
@@ -48,6 +48,19 @@ function Login() {
           <Link to="/register" className="underline ">
             Register
           </Link>
+        </h1>
+      </div>
+      <div className="absolute bottom-5">
+        <h1 className="p-2 text-sm text-gray-400 rounded-md bg-black/30 ">
+          Made by{" "}
+          <a
+            href="https://akshitagrwal.dev"
+            target="_blank"
+            className="transition-all hover:underline"
+            rel="noreferrer"
+          >
+            Akshit Agrawal
+          </a>
         </h1>
       </div>
     </div>
